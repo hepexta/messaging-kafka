@@ -6,4 +6,4 @@ consist of three components:
 2. Kafka broker.
 3. Three consumers to calculate the distance traveled by a car
 
-[!image]:/Capture.PNG
+![image](Capture.PNG)
