@@ -28,8 +28,7 @@
   </properties>
 
   <modules>
-
-    <module>kafka-cluster</module>
+    <module>kafka-taxi-app</module>
   </modules>
 
 </project>
