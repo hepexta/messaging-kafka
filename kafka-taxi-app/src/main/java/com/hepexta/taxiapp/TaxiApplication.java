@@ -8,6 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @Slf4j
 public class TaxiApplication {
     public static void main(String[] args) {
-        SpringApplication.run(TaxiApplication.class, args).close();
+        SpringApplication.run(TaxiApplication.class, args);
     }
 }
