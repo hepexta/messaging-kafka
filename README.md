@@ -9,5 +9,5 @@ Based on https://hub.docker.com/r/wurstmeister/kafka/
 
 Run with:
 
-`docker-compose -f zk-single-kafka-single.yml up
-docker-compose -f zk-single-kafka-single.yml down`
+`docker-compose -f docker-compose.yml up
+docker-compose -f docker-compose.yml down -v`
