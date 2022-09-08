@@ -14,7 +14,7 @@ public class DistanceListener {
 
     private final PositionStorage positionStorage;
 
-    @KafkaListener(id = "distanceCalculationGroup", topics = "taxiTopic")
+    @KafkaListener(id = "distanceCalculationGroup", topics = "taxiTopic", containerFactory = "positionListener")
     public void listen(Position position) {
         log.info("Received: " + position);
         positionStorage.upsert(position);

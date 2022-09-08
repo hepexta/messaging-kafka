@@ -14,7 +14,7 @@ public class PositionStorage {
     public void upsert(Position position) {
         List<Position> positions = cache.get(position.getCarId());
         if (CollectionUtils.isEmpty(positions)) {
-            cache.put(position.getCarId(), Arrays.asList(position));
+            cache.put(position.getCarId(), new ArrayList<>() {{add(position);}});
         }
         else {
             positions.add(position);
